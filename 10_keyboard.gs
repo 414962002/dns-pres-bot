@@ -1,4 +1,6 @@
 /**********************************************************************************
+ * It defines an inline keyboard for a Telegram bot.
+ * 
  * @description 
  *             The 'keyboard_text_start' is an object that represents a keyboard with buttons, 
  *             specifically an inline keyboard for a Telegram bot.
@@ -13,6 +15,7 @@
  * @see {@link https://core.telegram.org/bots/api#inlinekeyboardmarkup}                          
  *                                                                                
  * @author 414962002 
+ * 
 **********************************************************************************/
 
 let keyboard_text_start = {

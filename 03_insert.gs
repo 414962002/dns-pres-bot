@@ -2,6 +2,7 @@
  * Calculates the sum of certain values in a spreadsheet.
  * 
  * @function calcInsSum
+ * 
  * @description 
  *             This function performs calculations on a Google Spreadsheet. 
  *             It first retrieves the active spreadsheet and the current date. 

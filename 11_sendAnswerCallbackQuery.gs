@@ -1,4 +1,6 @@
 /**********************************************************************************
+ * It sends a response to a callback query in a Telegram bot.
+ * 
  * @function sendAnswerCallbackQuery
  * 
  * @description 
@@ -15,6 +17,7 @@
  * @see {@link https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app}
  * 
  * @author 414962002
+ * 
 **********************************************************************************/
 
 function sendAnswerCallbackQuery(chat_id, callback_query_id, text) {

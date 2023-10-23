@@ -14,6 +14,7 @@
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime}
  * 
  * @author 414962002
+ * 
 **********************************************************************************/
 
 function sendUpshotChart() {

@@ -1,6 +1,8 @@
 let roundedAverage;
 
 /**********************************************************************************
+ * It calculates the average of the values for the current month.
+ * 
  * @function calculateAverageOfCurrentMonth
  *
  * @description 
@@ -47,7 +49,7 @@ Logger.log(roundedAverage); // Output the rounded average
 let sumCurrentMonth = 0;
 
 /**********************************************************************************
- * It calculates the sum of values
+ * It calculates the sum of values.
  * 
  * @function calculateSumOfCurrentMonth
  *
@@ -60,8 +62,9 @@ let sumCurrentMonth = 0;
  *             If it is, it adds the value to the sum. The sum of the values is stored in the 
  *             global variable sumCurrentMonth.
  * 
- * @author 414962002
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof}
+ * 
+ * @author 414962002
  * 
 **********************************************************************************/
 function calculateSumOfCurrentMonth() {

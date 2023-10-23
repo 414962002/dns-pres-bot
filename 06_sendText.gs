@@ -1,5 +1,9 @@
 /**********************************************************************************
+ * It sends a text message to a specified chat ID on Telegram using the 
+ * Telegram Bot API, with an optional custom keyboard.
+ * 
  * @function sendText
+ * 
  * @description 
  *             This code defines a function called 'sendText' that sends 
  *             a text message to a chat using the 'Telegram API'.
@@ -18,6 +22,7 @@
  * @see {@link https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app}
  * 
  * @author 414962002
+ * 
 **********************************************************************************/
 
 function sendText(chat_id, text, keyboard_text) {

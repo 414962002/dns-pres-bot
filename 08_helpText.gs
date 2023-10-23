@@ -1,4 +1,6 @@
 /**********************************************************************************
+ * It defines a multi-line string variable helpText.
+ * 
  * @description 
  *             The 'helpText' variable is a multiline string in JavaScript 
  *             that provides instructional text for the user.
@@ -15,6 +17,7 @@
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals}                          
  *                                                                                
  * @author 414962002 
+ * 
 **********************************************************************************/
 
 const helpText = `

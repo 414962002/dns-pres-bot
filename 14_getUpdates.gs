@@ -1,5 +1,5 @@
 /**********************************************************************************
- * Use this method to receive incoming updates using long polling
+ * Use this method to receive incoming updates using long polling.
  * 
  * @function getUpdates
  * 
@@ -15,6 +15,7 @@
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse}
  * 
  * @author 414962002
+ * 
 **********************************************************************************/
 
 function getUpdates(token) {

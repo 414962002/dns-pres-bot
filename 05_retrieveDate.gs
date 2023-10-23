@@ -2,6 +2,7 @@
  * Retrieves the current month number.
  * 
  * @function getMonthNumber
+ * 
  * @description 
  *             This function creates a new Date object, gets the current month (1-based index), 
  *             logs the month number, and returns the {@link getMonthNumber} function itself.
@@ -22,12 +23,14 @@ function getMonthNumber() {
  * Retrieves the current month name.
  *
  * @function getMonthName
+ * 
  * @description 
  *             This function creates a new Date object, gets the current month name, 
  *             logs the month name, and returns the function itself.
  * 
- * @author 414962002
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleString}
+ * 
+ * @author 414962002
  *
 **********************************************************************************/
 
