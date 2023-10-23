@@ -47,6 +47,8 @@ Logger.log(roundedAverage); // Output the rounded average
 let sumCurrentMonth = 0;
 
 /**********************************************************************************
+ * It calculates the sum of values
+ * 
  * @function calculateSumOfCurrentMonth
  *
  * @description 

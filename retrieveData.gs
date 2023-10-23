@@ -1,5 +1,5 @@
 /**********************************************************************************
- * Calculates the sum of certain values in a spreadsheet.
+ * It retrieves data from a Google Sheets document.
  *
  * @function insMesToSheet
  *
@@ -34,7 +34,7 @@ function showTodaySum() {  // Refactored function to show today's sum
     return date instanceof Date && Utilities.formatDate(date, "GMT+3", "dd/MM/yyyy") === today;
   });
   const sixCellValue = parseFloat(values[todayRow][5]); // Get the value at column 6 of the today's row
-  
+
   // If the value is NaN (not a number), the sum variable is assigned 
   // a string indicating that there is no value for the current day. 
   // Otherwise, the sum variable is assigned the value of sixCellValue 
