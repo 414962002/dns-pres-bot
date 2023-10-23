@@ -36,7 +36,8 @@
  * @see {@link https://core.telegram.org/bots/api#callbackquery}                  
  * @see {@link https://core.telegram.org/bots/api#answercallbackquery}            
  *                                                                                
- * @author 414962002                                                              
+ * @author 414962002            
+ *                                                   
 **********************************************************************************/
 
 
