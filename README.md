@@ -1,3 +1,5 @@
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/1.jpg" />
+
 ### Table of Contents
 - [Green Economy](#green-economy)
 - [Collection & Pressing](#collection-and-pressing)  
