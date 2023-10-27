@@ -1,4 +1,4 @@
-<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/1.jpg" />
+<img align="right" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/1.jpg" />
 
 #### Table of Contents
 - [Green Economy](#green-economy)
@@ -6,6 +6,7 @@
 - [Telegram Bot](#telegram-bot)  
 - [Google Spreadsheet](#google-spreadsheet)
 - [Google App Script](#google-app-script)
+
   
 &#8203;  
 ***
