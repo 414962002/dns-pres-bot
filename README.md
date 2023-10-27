@@ -4,7 +4,8 @@
 - [Green Economy](#green-economy)
 - [Collection & Pressing](#collection-and-pressing)  
 - [Telegram Bot](#telegram-bot)  
-- [Green Economy](#green-economy)
+- [Google Spreadsheet](#google-spreadsheet)
+- [Google App Script](#google-app-script)
   
 &#8203;  
 ***
