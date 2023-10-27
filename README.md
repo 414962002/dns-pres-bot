@@ -48,10 +48,14 @@ You can use Google Sheets as a database for a wide range of tasks, from tracking
 
 &#8203;  
    
-<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/2.png" />
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/6.png" />
 
 # Google App Script 
 
-Google Sheets can be used as a basic database for small to medium-sized projects. It allows you to store, sort, and filter data, and even perform calculations with built-in functions. It also supports real-time collaboration, so multiple users can work on the same spreadsheet simultaneously.
+Google Apps Script is a cloud-based scripting platform developed by Google. It allows you to write scripts that integrate with Google Workspace, including Gmail, Google Drive, and Google Sheets. You can use Google Apps Script to automate tasks, build web applications, and extend the functionality of Google Workspace.
 
-You can use Google Sheets as a database for a wide range of tasks, from tracking inventory for a small business to managing a personal budget. It can store customer information, track inventory levels, and monitor sales data for an e-commerce store. You can also use it to track income and expenses, set financial goals, and monitor progress toward those goals.
+You write scripts in JavaScript and have access to built-in libraries for Google Workspace applications. Google Apps Script runs on Google's servers, so you don't need to worry about setting up a server or managing data access permissions.
+
+Google Apps Script is part of Google Workspace and is available to everyone with a Gmail account, so no additional software or services are required to start using it.
+
+Google Apps Script can be used to create a wide variety of applications, from simple scripts to complex web applications. For example, you can use it to create a mail merge using Gmail and Sheets, analyze sentiment of open-ended feedback, or even build a chatbot.
