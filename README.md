@@ -8,10 +8,9 @@ Sustainable Consumption and Production aims to improve production processes and 
 
 The Green Economy provides a macroeconomic approach to sustainable economic growth with a central focus on investments, employment and skills. 
   
- &#8203;  
- &#8203;  
+&#8203;  
  
- <img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/3.jpg" />
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/3.jpg" />
 
 # Collection & Pressing
 
@@ -20,12 +19,39 @@ The pressing of waste paper after the collection phase plays a crucial role in p
 Compaction: The pressing process helps to compact the collected paper waste, making it easier to handle and transport. This is especially important when dealing with large quantities of paper, as it reduces the space required for storage and transportation, thereby saving on resources.
 
 Removal of Excess Air: During the collection process, paper waste often includes a significant amount of air. Pressing the paper can help to remove this excess air, which can improve the efficiency of the subsequent processing stages. This is particularly important in the pulping stage, where the paper is broken down into a slurry of fibers. Having too much air in the pulp can make this process more difficult and less efficient.
-  
- &#8203;  
- &#8203; 
+
+&#8203;  
+   
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/5.png" />
+
+# Telegram Bot 
+
+Connecting a Telegram bot to a Google Sheet can be done using Google Apps Script. This allows the bot to interact with the sheet, reading and writing data to it. Here's a brief explanation of how this can be done:
+
+Setting up the Telegram Bot: First, you need to create a bot on Telegram. This can be done by talking to the BotFather on Telegram. The BotFather will provide you with a token, which is needed to interact with your bot.
+
+Setting up Google Apps Script: Next, you need to create a new Google Apps Script. This script will be used to interact with the Telegram bot and the Google Sheet. The script will need to be deployed as a web application, which will provide a URL that can be used to receive updates from the bot.
+
+Connecting the Bot to the Script: The Google Apps Script will need to be connected to the Telegram bot. This is done by using the bot token provided by the BotFather. The script will also need to specify the ID of the Google Sheet it will be interacting with.
+
+Interacting with the Google Sheet: Once the bot and the Google Apps Script are connected, the script can start interacting with the Google Sheet. This can involve reading data from the sheet, writing data to the sheet, or both. The exact actions will depend on the requirements of your bot.
+
+&#8203;  
    
 <img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/2.png" />
 
 # Google Spreadsheet 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla lacus, rutrum nec pharetra eu, ornare vestibulum dui. 
+Google Sheets can be used as a basic database for small to medium-sized projects. It allows you to store, sort, and filter data, and even perform calculations with built-in functions. It also supports real-time collaboration, so multiple users can work on the same spreadsheet simultaneously.
+
+You can use Google Sheets as a database for a wide range of tasks, from tracking inventory for a small business to managing a personal budget. It can store customer information, track inventory levels, and monitor sales data for an e-commerce store. You can also use it to track income and expenses, set financial goals, and monitor progress toward those goals.
+
+&#8203;  
+   
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/2.png" />
+
+# Google App Script 
+
+Google Sheets can be used as a basic database for small to medium-sized projects. It allows you to store, sort, and filter data, and even perform calculations with built-in functions. It also supports real-time collaboration, so multiple users can work on the same spreadsheet simultaneously.
+
+You can use Google Sheets as a database for a wide range of tasks, from tracking inventory for a small business to managing a personal budget. It can store customer information, track inventory levels, and monitor sales data for an e-commerce store. You can also use it to track income and expenses, set financial goals, and monitor progress toward those goals.
