@@ -1,3 +1,9 @@
+### Table of Contents
+- [Green Economy](#green-economy)
+- [Collection & Pressing](#collection-and-pressing)  
+- [Telegram Bot](#telegram-bot)  
+- [Green Economy](#green-economy)
+  
 <img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/4.jpg" />
 
 # Green Economy
@@ -12,7 +18,7 @@ The Green Economy provides a macroeconomic approach to sustainable economic grow
  
 <img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/3.jpg" />
 
-# Collection & Pressing
+# Collection and Pressing
 
 The pressing of waste paper after the collection phase plays a crucial role in preparing the paper for the subsequent stages of the recycling process. Here's why:
 
