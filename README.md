@@ -82,5 +82,5 @@ Google Apps Script can be used to create a wide variety of applications, from si
 
 Chrome-extension to manage Google Apps Script(GAS) code with your favorite SCM service(github/github enterprise/bitbucket/gitlab).
 
-With this extension, you can manage your code in GAS editor, push code to a new created branch, pull from a repository/branch..
+With this extension, you can manage your code in GAS editor, push code to a new created branch, pull from a repository/branch.
 
