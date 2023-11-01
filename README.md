@@ -6,6 +6,7 @@
 - [Telegram Bot](#telegram-bot)  
 - [Google Spreadsheet](#google-spreadsheet)
 - [Google App Script](#google-app-script)
+- [Google Apps Script GitHub Assistant](#google-apps-script-github-assistant)
 
   
 &#8203;  
@@ -71,3 +72,15 @@ You write scripts in JavaScript and have access to built-in libraries for Google
 Google Apps Script is part of Google Workspace and is available to everyone with a Gmail account, so no additional software or services are required to start using it.
 
 Google Apps Script can be used to create a wide variety of applications, from simple scripts to complex web applications. For example, you can use it to create a mail merge using Gmail and Sheets, analyze sentiment of open-ended feedback, or even build a chatbot.
+
+
+&#8203;  
+   
+<img align="left" width="200" src="https://github.com/414962002/dns-pres-bot/blob/main/img/7.png" />
+
+# Google Apps Script GitHub Assistant 
+
+Chrome-extension to manage Google Apps Script(GAS) code with your favorite SCM service(github/github enterprise/bitbucket/gitlab).
+
+With this extension, you can manage your code in GAS editor, push code to a new created branch, pull from a repository/branch..
+
