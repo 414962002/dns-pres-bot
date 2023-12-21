@@ -20,55 +20,35 @@
  * @author 414962002
  *
 **********************************************************************************/
-
-// function calcInsSum() {
-//   const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet(); // get the active spreadsheet and selects the active sheet.
-//   const today = Utilities.formatDate(new Date(), "GMT+3", "dd/MM/yyyy"); // retrieve the current date and formats it as "dd/MM/yyyy" in the GMT+3 timezone.
-//   const dataRange = sheet.getDataRange(); // gets the range of data in the sheet.
-//   const values = dataRange.getValues();  // retrieves the values from the data range.
-
-//   const todayRow = values.findIndex(row => { // search for a row in the values that has a date matching today's date.
-//     const date = row[1];
-//     return date instanceof Date && Utilities.formatDate(date, "GMT+3", "dd/MM/yyyy") === today;
-//   });
-
-//   if (todayRow !== -1) { // If a row is found, it performs the following calculations:
-//     const fifthCellValue = parseFloat(values[todayRow][4]); // It retrieves the fifth cell value from the found row and converts it to a floating-point number.
-//     const multipliedValue = isNaN(fifthCellValue) ? 0 : fifthCellValue * 6.6; // It multiplies the fifth cell value by 6.6, or assigns 0 if the fifth cell value is not a number.
-//     const sum = (parseFloat(values[todayRow][2]) || 0) + (parseFloat(values[todayRow][3]) || 0) + multipliedValue;  // It calculates the sum of the third[2] cell value, the fourth[3] cell value, and the multiplied value.
-//     const sixCell = sheet.getRange(todayRow + 1, 6); // It gets the sixth cell in the found row.
-//     sixCell.setNumberFormat("0");  //the value will be displayed as a whole number with no decimal places.
-//     sixCell.setValue(sum); // It sets the value of the sixth cell to the calculated sum.
-//     return;
-//   }
-//   console.log("No row found with today's date");
-// }
+let sharedCardValue;
+let sharedPlasticValue;
+let sharedStyroValue;
 
 function calcInsSum() {
-    const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-    const today = Utilities.formatDate(new Date(), "GMT+3", "dd/MM/yyyy");
-    const dataRange = sheet.getDataRange();
-    const values = dataRange.getValues();
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const today = Utilities.formatDate(new Date(), "GMT+3", "dd/MM/yyyy");
+  const dataRange = sheet.getDataRange();
+  const values = dataRange.getValues();
 
-    const todayRow = values.findIndex(row => {
-        const date = row[1];
-        return date instanceof Date && Utilities.formatDate(date, "GMT+3", "dd/MM/yyyy") === today;
-    });
+  const todayRow = values.findIndex(row => {
+    const date = row[1];
+    return date instanceof Date && Utilities.formatDate(date, "GMT+3", "dd/MM/yyyy") === today;
+  });
 
-    if (todayRow !== -1) {
-        const thirdCellValue = parseFloat(values[todayRow][2]);
-        const fourthCellValue = parseFloat(values[todayRow][3]);
-        const fifthCellValue = parseFloat(values[todayRow][4]);
-        const cardValue = isNaN(thirdCellValue) ? 0 : thirdCellValue * 1.3;
-        const plasticValue = isNaN(fourthCellValue) ? 0 : fourthCellValue * 1.3;
-        const styroValue = isNaN(fifthCellValue) ? 0 : fifthCellValue * 6.6;
-        const sum = cardValue + plasticValue + styroValue;
-        const sixCell = sheet.getRange(todayRow + 1, 6);
-        sixCell.setNumberFormat("0");
-        sixCell.setValue(sum);
-        return;
-    }
-    console.log("No row found with today's date");
+  if (todayRow !== -1) {
+    const thirdCellValue = parseFloat(values[todayRow][2]);
+    const fourthCellValue = parseFloat(values[todayRow][3]);
+    const fifthCellValue = parseFloat(values[todayRow][4]);
+    sharedCardValue = isNaN(thirdCellValue) ? 0 : thirdCellValue * 1.3;
+    sharedPlasticValue = isNaN(fourthCellValue) ? 0 : fourthCellValue * 1.3;
+    sharedStyroValue = isNaN(fifthCellValue) ? 0 : fifthCellValue * 6.6;
+    const sum = sharedCardValue + sharedPlasticValue + sharedStyroValue;
+    const sixCell = sheet.getRange(todayRow + 1, 6);
+    sixCell.setNumberFormat("0");
+    sixCell.setValue(sum);
+    return;
+  }
+  console.log("No row found with today's date");
 }
 
 /**********************************************************************************
@@ -116,7 +96,22 @@ function insMesToSheet(messageText) {
             columnIndex = 3; // Set the column index to 3 and set the value in the corresponding cell
             sheet.getRange(row + 1, columnIndex).setValue(remainingChars); // This code snippet sets the value of a cell in a spreadsheet to the value of remainingChars, at the specified row and column index.
             calcInsSum(); // Call the calcInsSum function
-            sendText(chat_id, 'Done! 🤭'); // Send a success message
+
+            //++++++++++++++++++++++++++++++++++++//
+            //For sending a value in response when data is inserted into the bot.
+            function getCardValue() {
+              if (sharedCardValue !== undefined) {
+                return sharedCardValue;
+              } else {
+                return null;
+              }
+            }
+            calcInsSum();
+            let cardValue = getCardValue();
+            let cardValueInt = Math.floor(cardValue);
+            //++++++++++++++++++++++++++++++++++++//
+
+            sendText(chat_id, 'card: 🤭 ' + cardValueInt); // Send a success message
           } else {
             sendText(chat_id, 'Error: Invalid value 🫤'); // Send an error message for invalid value
             return; // Exit the function
@@ -127,7 +122,22 @@ function insMesToSheet(messageText) {
             columnIndex = 4;
             sheet.getRange(row + 1, columnIndex).setValue(remainingChars);
             calcInsSum();
-            sendText(chat_id, 'Done! 🤭');
+
+            //++++++++++++++++++++++++++++++++++++//
+            //For sending a value in response when data is inserted into the bot.
+            function getPlasticValue() {
+              if (sharedPlasticValue !== undefined) {
+                return sharedPlasticValue;
+              } else {
+                return null;
+              }
+            }
+            calcInsSum();
+            let plasticValue = getPlasticValue();
+            let plasticValueInt = Math.floor(plasticValue);
+            //++++++++++++++++++++++++++++++++++++//
+
+            sendText(chat_id, 'plastic: 🤭 ' + plasticValueInt);
           } else {
             sendText(chat_id, 'Error: Invalid value 🫤');
             return;
@@ -138,7 +148,24 @@ function insMesToSheet(messageText) {
             columnIndex = 5;
             sheet.getRange(row + 1, columnIndex).setValue(remainingChars);
             calcInsSum();
-            sendText(chat_id, 'Done! 🤭');
+
+
+            //++++++++++++++++++++++++++++++++++++//
+            //For sending a value in response when data is inserted into the bot.
+            function getStyroValue() {
+              if (sharedStyroValue !== undefined) {
+                return sharedStyroValue;
+              } else {
+                return null;
+              }
+            }
+            calcInsSum();
+            let styroValue = getStyroValue();
+            let styroValueInt = Math.floor(styroValue);
+            //++++++++++++++++++++++++++++++++++++//
+
+
+            sendText(chat_id, 'styro: 🤭 ' + styroValueInt);
           } else {
             sendText(chat_id, 'Error: Invalid value 🫤');
             return;

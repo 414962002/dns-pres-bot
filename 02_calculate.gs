@@ -43,7 +43,7 @@ function calculateAverageOfCurrentMonth() {
   roundedAverage = Math.floor(average); // Assign the value to the variable
 }
 calculateAverageOfCurrentMonth(); // Call the function
-Logger.log(roundedAverage); // Output the rounded average
+// Logger.log(roundedAverage); // Output the rounded average
 
 
 let sumCurrentMonth = 0;
@@ -87,5 +87,5 @@ function calculateSumOfCurrentMonth() {
       }
     }
   }
-  Logger.log("Sum of values of the current month: " + sumCurrentMonth); // Log the sum of values
+  // Logger.log("Sum of values of the current month: " + sumCurrentMonth); // Log the sum of values
 }
