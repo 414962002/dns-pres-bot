@@ -108,7 +108,7 @@ function insMesToSheet(messageText) {
             }
             calcInsSum();
             let cardValue = getCardValue();
-            let cardValueInt = Math.floor(cardValue);
+            let cardValueInt = Math.round(cardValue);
             //++++++++++++++++++++++++++++++++++++//
 
             sendText(chat_id, 'card: 🤭 ' + cardValueInt); // Send a success message
@@ -134,7 +134,7 @@ function insMesToSheet(messageText) {
             }
             calcInsSum();
             let plasticValue = getPlasticValue();
-            let plasticValueInt = Math.floor(plasticValue);
+            let plasticValueInt = Math.round(plasticValue);
             //++++++++++++++++++++++++++++++++++++//
 
             sendText(chat_id, 'plastic: 🤭 ' + plasticValueInt);
@@ -161,7 +161,7 @@ function insMesToSheet(messageText) {
             }
             calcInsSum();
             let styroValue = getStyroValue();
-            let styroValueInt = Math.floor(styroValue);
+            let styroValueInt = Math.round(styroValue);
             //++++++++++++++++++++++++++++++++++++//
 
 
